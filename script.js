@@ -1,5 +1,14 @@
 function firstWord(s) {
   // your code here
+	if (!s) return "";
+
+	let trimed = s.trimStart();
+
+	let space = trimed.indexOf(" ");
+	if (space === -1) {
+		return "";
+	}
+	return trimed.slice(0, space);
 }
 
 // Do not change the code below
