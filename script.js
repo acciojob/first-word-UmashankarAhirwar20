@@ -6,7 +6,7 @@ function firstWord(s) {
 
 	let space = trimed.indexOf(" ");
 	if (space === -1) {
-		return "";
+		return s;
 	}
 	return trimed.slice(0, space);
 }
@@ -15,3 +15,5 @@ function firstWord(s) {
 
 const s = prompt("Enter String:");
 alert(firstWord(s));
+
+
